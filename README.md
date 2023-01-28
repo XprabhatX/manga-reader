@@ -1,4 +1,4 @@
-## [To Manga Reader]
+## [To Manga Reader](https://prabhat-recipe.netlify.app/)
 
 ## manga-reader
 A simplistic manga reader template I created with my friend Shlok Prajapati.
