@@ -1,4 +1,8 @@
-## [To Manga Reader](https://prabhat-recipe.netlify.app/)
+## [To Manga Reader]([https://prabhat-recipe.netlify.app/](https://xprabhatx.github.io/manga-reader/))
+
+![image](https://user-images.githubusercontent.com/83898334/215242157-68bdd452-85db-4057-9633-2c490c1dfbbb.png)
+
+![image](https://user-images.githubusercontent.com/83898334/215242181-7d934b19-001c-4411-9d46-29c77e3515b5.png)
 
 ## manga-reader
 A simplistic manga reader template I created with my friend Shlok Prajapati.
