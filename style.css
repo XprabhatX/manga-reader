@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(35, 35, 35);
+    color: aliceblue;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainHead h1 {
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.selection {
+    height: 30px;
+    margin-top: 30px;
+}
+
+#chapters {
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    background-image: linear-gradient(to right, #D3959B 0%, #BFE6BA  51%, #D3959B  100%);
+
+    border-radius: 50px;
+}
+
+/* Panel Section Starts */
+.panelSec {
+    width: 70vw;
+
+    margin: 20px auto 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel {
+    margin-top: 20px;
+}
+
+.panel img {
+    display: block;
+    min-width: 25vw;
+    width: 25vw;
+    max-width: 65vw;
+    margin: 0 auto;
+}
+/* Panel Section Starts */
+
+/* Zoom Section Starts */
+/* .zoom {
+    text-align: center;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-size: 30px;
+
+    z-index: 3;
+} */
+
+.plus, .minus {
+    height: 30px;
+    width: 30px;
+    bottom: 15px;
+
+    background-color: rgb(14, 212, 3);
+    color: black;
+    
+    position: fixed;
+    font-size: 25px;
+    border-radius: 100%;
+    transition: transform 0.2s;
+}
+
+.plus {
+    right: 15px;
+}
+
+.minus {
+    left: 15px;
+}
+
+.plus:hover, .minus:hover {
+    transform: scale(1.2);
+}
+/* Zoom Section Ends */
+
+/* Comment Section begins */
+.comment-section {
+    width: 85%;
+    position: relative;
+    margin: 40px auto 0 auto;
+}
+
+#commentHead {
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.addCom {
+    margin: 20px 0 0 0;
+}
+.addCom form input {
+    font-weight: bold;
+}
+.uname {
+    font-size: 1.375rem;
+}
+.addCom textarea {
+    border-radius: 8px;
+    padding: 10px;
+}
+.postCom {
+    background-color: rgb(50, 159, 50);
+    border-radius: 50px;
+    width: 100px;
+    padding: 8px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.sampleCom {
+    margin-top: 25px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.who {
+    text-align: center;
+}
+
+.pfp {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 4px;
+    display: inline-block;
+
+    border: 2px solid rgb(70, 70, 250);
+}
+
+.userID {
+    font-size: 18px;
+}
+
+.sampleCom p {
+    color: aliceblue;
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.reply {
+    color: rgb(67, 169, 67);
+}
+/* Comment Section Ends */
+
+/* Music Player Begins */
+.musicPlayer {
+    min-height: 340px;
+    min-width: 60px;
+    z-index: 3;
+    
+    background-color: rgb(37, 203, 25);
+
+    position: fixed;
+    left: -60px;
+    top: calc((100vh - 300px) / 2);
+
+    border-radius: 0 20px 20px 0;
+    transition: left 0.3s ease-out;
+}
+
+.musicPlayer.active {
+    left: 0px;
+}
+
+.controls {
+    min-height: 340px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.controls i {
+    cursor: pointer;
+}
+
+.side-toggler {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    font-size: 24px;
+    background-color: rgb(37, 203, 25);
+
+    border: none;
+    border-radius: 0 20px 20px 0;
+    transition: all 0.3s ease;
+}
+
+.side-toggler i {
+    transition: all 0.2s ease;
+}
+
+.side-toggler.active i{
+    transform: rotate(180deg);
+    z-index: 10;
+}
+
+.sidebar-icon {
+    color:black;
+}
+
+
+/* You can delete it
+.musicPlayer p {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.musicPlayer img {
+    height: 32px;
+    width: 32px;
+    filter: drop-shadow(5px 5px 9px black);
+} 
+*/
+/* Music Player Ends */
+
+/* End-Section begins */
+.social-section {
+    width: 100%;
+    height: 100px;
+    margin-top: 1.5625rem;
+    
+    background-color: #D3959B;
+    color: aliceblue;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.socials-icon {
+    color: black;
+    margin: 10px;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+.socials-icon:hover {
+    margin: 5px 9px;
+    font-size: 2.3rem;
+}
+/* 
+.socials img {
+    width: 40px;
+    height: 40px;
+}
+
+.socials img:hover {
+    width: 60px;
+    height: 60px;
+} */
+/* End Section ends */
+

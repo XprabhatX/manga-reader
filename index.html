@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Reader - Prabhat & Shlok</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- My Favicon -->
+    <link rel="icon" type="image/x-icon" href="Favicon/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mainHead">
+            <h1>You must be reading:</h1>
+            <img src="GIF/csmTitle.gif" height="200" alt="" srcset="">
+        </div>
+
+        <div class="selection">
+            <select name="chapters" id="chapters">
+                <option value="ch1">Chapter 001</option>
+                <option value="ch2">Chapter 002</option>
+                <option value="ch3">Chapter 003</option>
+                <option value="ch4">Chapter 004</option>
+                <option value="ch5">Chapter 005</option>
+            </select>
+        </div>
+        
+        <div class="panelSec">
+            <div class="panel"><img id="panel_zoom1" src="V1/v1p0.jpg" alt="" srcset=""></div>
+            <div class="panel"><img id="panel_zoom2" src="V1/v1p1.png" alt="" srcset=""></div>
+            <div class="panel"><img id="panel_zoom3" src="V1/v1p2.png" alt="" srcset=""></div>
+            <div class="panel"><img id="panel_zoom4" src="V1/v1p3.png" alt="" srcset=""></div>
+            <div class="panel"><img id="panel_zoom5" src="V1/v1p4.png" alt="" srcset=""></div>
+            <div class="panel"><img id="panel_zoom6" src="V1/v1p5.png" alt="" srcset=""></div>
+        </div>
+
+        <section class="comment-section">
+            <div class="commentSec">
+                <h3 id="commentHead">Comments</h3>
+    
+                <div class="addCom">
+                    <h1 class="uname">Your name</h1>
+                    <form action="mailto:prabhatpankajofficial@gmail.com">
+                        <textarea name="comment" id="comadd" cols="60" rows="12">Type your comment here!</textarea><br>
+                        <input type="submit" class="postCom" name="Post" value="Post!">
+                    </form>
+                </div>
+
+                <div class="sampleCom">
+                    <div class="who">                    
+                        <img class="pfp" src="Profile Img/pfp1.jpg" alt="">
+                        <h1 class="userID">Jane</h1>
+                    </div>
+                    <p>This is so freakin' awesome 😍</p><br>
+                    <a href="#" class="reply"><br>... Reply</a>
+                </div>
+                <div class="sampleCom">
+                    <div class="who">                    
+                        <img class="pfp" src="Profile Img/pfp2.jpg" alt="">
+                        <h1 class="userID">Prabhat P</h1>
+                    </div>
+                    <p>Yo when is the next chapter comin out?</p><br>
+                    <a href="#" class="reply"><br>... Reply</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="zoom"><button class="fa-solid fa-plus plus" onclick="zoom_in()"></button></div>
+        <div class="zoom"><button class="fa-solid fa-minus minus" onclick="zoom_out()"></button></div>
+
+        <div id="sidebar" class="musicPlayer">
+            <button id="toggle-sidebar" class="side-toggler"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="controls">
+                <!-- <div class="prev"><img src="Music Player Img/prev.png"></div> -->
+                <!-- <div class="pause"><img src="Music Player Img/pause.png"></div> -->
+                <!-- <div class="next"><img src="Music Player Img/next.png"></div> -->
+
+                <i class="fa-solid fa-backward-step fa-2xl sidebar-icon"></i>
+                <i class="fa-solid fa-pause fa-2xl sidebar-icon"></i>               
+                <i class="fa-solid fa-forward-step fa-2xl sidebar-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="social-section">
+            <div><span>Ssup?</span></div>
+            <div class="socials">
+                <!-- <img src="github.png" alt="" srcset=""> -->
+                <!-- <img src="insta.png" alt="" srcset=""> -->
+                <!-- <img src="linkedin.png" alt="" srcset=""> -->
+                <!-- <img src="twitter.png" alt="" srcset=""> -->
+
+                <a><i class="fa-brands fa-github socials-icon"></i></a>
+                <a><i class="fa-brands fa-instagram socials-icon"></i></a>
+                <a><i class="fa-brands fa-linkedin socials-icon"></i></a>
+                <a><i class="fa-brands fa-twitter socials-icon"></i></a>
+            </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
